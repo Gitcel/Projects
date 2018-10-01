@@ -1,0 +1,176 @@
+body {
+
+    background: rgb(255,243,243);
+    background: linear-gradient(
+
+        0deg,
+        rgba(255,243,243,1) 0%,
+        rgba(144,141,176,1) 56%,
+        rgba(119,112,145,1) 69%,
+        rgb(59, 53, 99) 88%,
+        rgba(49,48,56,1) 94%
+
+    );
+
+    height: 870px;
+
+}
+
+#score-1 {
+
+    position: absolute;
+    left: 400px;
+    top: 200px;
+    font-size: 100px;
+    color: rgb(51, 21, 133);   
+    text-shadow: 4px 3px 0px rgba(31, 93, 109, 0.4);
+    animation: appear 2s ease 1 forwards;
+
+}
+
+.question {
+
+    position: relative;    
+    text-align: center;
+    margin-left: 200px;
+    top: -140px;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 45px;  
+    color: rgba(255, 255, 255, 1);;
+    background-clip: text;
+    text-shadow: 1px 6px 6px rgba(50, 20, 100, 0.8);
+    animation: slideIn 1.6s ease;
+
+}
+
+@keyframes slideIn {
+
+    0% {
+        top: -2000px;
+        opacity: 0;
+        text-shadow: 0 0 10px rgba(255,255,255,1),
+            0 0 20px rgba(255,255,255,1),
+            0 0 30px rgba(255,255,255,1),
+            0 0 40px #ff003769,
+            0 0 70px #ff4a877a,
+            0 0 80px #ffb5e7,
+            0 0 100px #ffc4f7
+        ;
+        filter: blur(20rem);
+    }
+
+    80% {
+        top: -140px;
+        opacity: 1;
+        text-shadow: 0 0 10px rgba(255,255,255,1),
+            0 0 20px rgba(255,255,255,1),
+            0 0 30px rgba(255,255,255,1),
+            0 0 40px #ff003769,
+            0 0 70px #ff4a877a,
+            0 0 80px #ffb5e7,
+            0 0 100px #ffc4f7
+        ;        
+    }
+
+    100% {
+        text-shadow: 1px 6px 6px rgba(50, 20, 100, 0.8);
+    }
+
+}
+
+.answer {
+    
+    margin-left: 200px;
+    top: 400px;
+    font-size: 40px;
+    font-family: 'Bai Jamjuree', sans-serif;
+    color: rgba(255, 255, 255, 1);;
+    background-clip: text;
+    text-shadow: 1px 6px 6px rgba(173, 73, 103, 0.8);
+    transition-duration: 1s;
+
+}
+
+.answer:hover {
+    
+    text-shadow: 0 0 10px rgba(255,255,255,1),
+            0 0 20px rgba(220,200,255,1),
+            0 0 30px rgba(220,190,255,1),
+            0 0 40px #ff003769,
+            0 0 70px #ff4a877a,
+            0 0 80px #ffb5e7,
+            0 0 100px #ffc4f7
+    ;
+
+}
+
+.radio-class {
+
+    position: relative;
+    margin-left: 800px;
+    top: -40px;
+    transform: scale(2, 2);
+
+}
+
+.button-class {
+
+    position: relative;
+    margin-left: -320px;
+    top: 40px;
+    width: 100px;
+    height: 50px;
+    background: linear-gradient(rgba(100, 10, 20, 1), rgba(240, 40, 100, 1), rgba(100, 10, 20, 1));
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 30px;
+    transition-duration: 1s;
+    animation-direction: alternate;
+    animation-name: buttonLight;
+
+}
+
+.button-class:hover {
+
+    cursor: pointer;
+    color: rgba(255, 100, 220, 1);
+    background: linear-gradient(rgba(240, 40, 150, 1), rgba(100, 10, 20, 1), rgba(240, 40, 150, 1));
+    box-shadow: 0 0 4px rgba(240, 40, 150, 1), 0 0 8px rgba(240, 40, 150, 1);
+
+}
+
+.button-class:active {
+
+    cursor: pointer;
+    color: rgba(255, 100, 220, 1);
+    background: linear-gradient(rgba(240, 40, 150, 1), rgba(100, 10, 20, 1), rgba(240, 40, 150, 1));
+    box-shadow: 0 0 4px rgba(240, 40, 150, 1), 0 0 8px rgba(240, 40, 150, 1);
+    text-shadow: 0 0 46px rgba(255, 200, 240, 1), 0 0 10px rgba(255, 200, 240, 1);
+
+}
+
+@keyframes buttonLight {
+
+    0% {background: linear-gradient(rgba(100, 10, 20, 1), rgba(240, 40, 100, 1), rgba(100, 10, 20, 1));}
+    100% {color: rgba(255, 100, 220, 1); background: linear-gradient(rgba(240, 40, 150, 1), rgba(100, 10, 20, 1), rgba(240, 40, 150, 1));}
+
+}
+
+.que-ans-id {
+
+    position: relative;
+    top: 440px;
+    font-family: 'Bai Jamjuree', sans-serif;
+    animation: appear 1s ease 1 forwards;
+    display: grid;    
+    grid-template-columns: 1fr;
+    grid-template-rows: 438px;
+    background-color: rgba(49, 39, 66, 0.8);
+    
+}
+
+@keyframes appear {
+
+    0% {opacity: 0.2; filter: blur(9rem);}
+    100% {opacity: 1; filter: blur(0rem);}
+
+}
