@@ -84,9 +84,6 @@
 
         }
     
-        echo "Score: ".$_SESSION['score']."<br>";
-        echo "Count: ".$_SESSION['count'];
-    
     ?>
 
     <style>
